@@ -1,0 +1,5 @@
+struct VecMsg
+{   
+    unsigned long index;
+    sequence<octet> data;
+};
