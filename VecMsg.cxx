@@ -89,7 +89,7 @@ size_t VecMsg::getMaxCdrSerializedSize(size_t current_alignment)
 
     current_alignment += (100 * 1) + eprosima::fastcdr::Cdr::alignment(current_alignment, 1);
 
-
+    current_alignment = 2100000; //TODO > 2MB
 
 
     return current_alignment - initial_alignment;

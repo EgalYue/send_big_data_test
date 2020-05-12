@@ -41,7 +41,7 @@ VecMsgPublisher::~VecMsgPublisher() {	Domain::removeParticipant(mp_participant);
 
 bool VecMsgPublisher::init()
 {
-    std::vector<uint8_t > temp(128,1);
+    std::vector<uint8_t > temp(1048576,2);
     m_VecMsg.data(temp);
     // Create RTPSParticipant
     ParticipantAttributes PParam;
